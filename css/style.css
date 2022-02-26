@@ -62,7 +62,7 @@ h3 {
 }
 
 header {
-    background-image: url('/images/bg-header-desktop.png');
+    background-image: url('../images/bg-header-desktop.png');
     height: 55vh;
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@ header {
     line-height: 18px;
     font-size: 18px;
 }
-.header-text h1{
+.header-text h3{
     text-align: center;
     letter-spacing: 2px;
 }
@@ -110,7 +110,6 @@ header {
 
 .tracks-primary {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     text-align: center;
@@ -302,4 +301,268 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 13px; 
+}
+
+@media screen and (max-width: 950px){
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 50vh;
+    }
+
+    .header-logo {
+        width: 700px;
+    }
+
+    .header-briefing {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .header-text {
+        gap: 15px;
+    }
+
+    .header-text p{
+        width: 550px;
+        margin: 0 auto;
+    }
+    
+    .Tracks {
+        height: 230vh;
+    }
+
+    .tracks-primary p {
+        width: 550px;
+    }
+    
+    .tracks-secondary-row {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .track-img img {
+        margin: 0 auto;
+        width: 550px;
+    }
+    
+    .tracks-preview {
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .track-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .access {
+        height: 110vh;
+    }
+    
+    .access-text p{
+        width: 500px;
+    }
+
+    .access-img img {
+        width: 600px;
+    }
+        
+    .partner {
+        height: 210vh;
+    }
+
+    .partner-secondary-row {
+        flex-direction: column;
+        gap: 40px; 
+    }
+
+    .partner-secondary-rows {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .partner-content {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    .partner-content p{
+        width: 320px;
+        line-height: 22px;
+    }
+    .partner-content h4{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .user-content p {
+        width: 500px;
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        height: 70vh;
+    }
+    
+    .footer-main {
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .footer-primary {
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-primary-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+    }
+    
+    .footer-context {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; 
+    }
+    
+    .footer-icon {
+        display: flex;
+        flex-direction: column;
+        gap: 13px; 
+    }
+}
+
+@media screen and (max-width: 600px){
+    header {
+        background-image: url('../images/bg-header-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 75vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-text p{
+        width: 400px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        line-height: 22px;
+        font-size: 18px;
+    }
+
+    .header-text h3{
+        margin: 0 auto;
+        line-height: 30px;
+        font-size: 24px;
+        width: 250px;
+    }
+
+    .header-button div {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .Tracks {
+        height: 200vh;
+    }
+        
+    .tracks-primary p {
+        width: 400px;
+        text-align: center;
+        line-height: 18px;
+        font-size: 16px;
+    }
+
+    .tracks-primary h3 {
+        text-align: center;
+        line-height: 30px;
+        font-size: 24px;
+        width: 200px;
+    }
+        
+    .track-content p {
+        width: 320px;
+    }
+    
+    .track-img img {
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .track-img{
+        margin: 0 auto;
+    }
+
+    .access {
+        height: 70vh;
+    }
+    
+    .access-text p{
+        width: 350px;
+    }
+
+    .access-text h3{
+        width: 300px;
+        text-align: center;
+    }
+
+    .access-img img {
+        width: 300px;
+    }
+
+    .partner {
+        height: 200vh;
+    }
+    
+    .partner-primary h3{
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .partner-content {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    .partner-content p{
+        width: 270px;
+        line-height: 22px;
+    }
+    .partner-content h4{
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .user-content p {
+        width: 250px;
+        margin: 0 auto;
+        line-height: 20px;
+    }
+
+    .users {
+        height: 60vh;
+    }
+
+    .user-content h3 {
+        width: 250px;
+        margin: 0 auto;
+    }
+    
 }
